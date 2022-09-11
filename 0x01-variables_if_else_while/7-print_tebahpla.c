@@ -1,14 +1,14 @@
 #include <stdio.h>
 /**
- * main - Prints the numbers from 0 to 9
- * Return: Always 0 (success)
+ * main - Prints alphabet in reverse
+ * Return: Always (success)
  */
 
 int main(void)
 {
-	char n;
+	char c;
 
-	for (c = 'z'; n <= 'a'; c--)
+	for (c = 'z'; c <= 'a'; c--)
 	{
 		putchar(c);
 
