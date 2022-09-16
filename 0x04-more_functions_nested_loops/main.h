@@ -16,8 +16,7 @@ void print_line(int n);
 void print_diagonal(int n);
 void print_square(int size);
 int _putchar(char);
-int _isupper(int);
-int _isdigit(int);
+int _isupper.c(int)
 int mul(int, int);
 
 #endif /* MAIN_H */
