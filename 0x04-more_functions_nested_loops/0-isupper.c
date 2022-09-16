@@ -4,6 +4,7 @@
  * @c: character tested
  * Return: always 1 if it is, 0 if its not
  */
+
 int _isupper(int c)
 {
 	if ((c >= 'A') && (c <= 'Z'))
