@@ -18,5 +18,6 @@ void print_square(int size);
 int _putchar(char);
 int _isupper(int c);
 int mul(int, int);
+void print_triangle(int size);
 
 #endif /* MAIN_H */
