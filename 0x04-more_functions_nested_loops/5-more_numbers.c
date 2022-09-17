@@ -1,15 +1,11 @@
 #include "main.h"
 /**
- * more_numbers - print 0 to 14 ten times
+ * more_numbers - print more
+ * Return: empty
  */
 
 void more_numbers(void)
-{
-	int line, n, repeat, limit;
 
-	n = '0';
-	repeat = 0;
-	limit = '9';
 {
 	int n = '0';
 	int line;
@@ -19,7 +15,6 @@ void more_numbers(void)
 	for (line = 0; line < 10; line++)
 	{
 		while (repeat < 2)
-
 		{
 			while (n <= limit)
 			{
