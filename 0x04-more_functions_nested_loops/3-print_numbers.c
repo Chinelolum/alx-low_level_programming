@@ -1,11 +1,9 @@
 #include "main.h"
-
 /**
- * print_numbers - print numbers
+ * print_numbers - print normal numbers
  *
  * Return : empty
  */
-
 void print_number(void)
 {
 	int c;
