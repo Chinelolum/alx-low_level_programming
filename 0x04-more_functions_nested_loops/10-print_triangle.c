@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print triangle - draw a triangle
+ * print_triangle - draw a triangle
  * @size: lenght
  *
  * Return: void

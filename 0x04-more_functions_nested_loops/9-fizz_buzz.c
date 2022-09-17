@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - take buxx
+ * main - take buzz
  *
- * Return : buzz
+ * Return: buzz
  */
 
 int main(void)
