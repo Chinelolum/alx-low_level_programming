@@ -5,14 +5,37 @@
 
 void more_numbers(void)
 {
-	int x, y;
+	int line, n, repeat, limit;
 
-	for (x = 0; x < 10; x++)
+	n = '0';
+	repeat = 0;
+	limit = '9';
+{
+	int n = '0';
+	int line;
+	int repeat = 0;
+	int limit = '9';
+
+	for (line = 0; line < 10; line++)
 	{
-		for (y = 0; y < 15; y++)
+		while (repeat < 2)
+
 		{
-			_putchar(y + '0');
+			while (n <= limit)
+			{
+				if (limit == '4')
+					_putchar('1');
+				_putchar(n);
+				n++;
+			}
+			repeat++;
+			limit = '4';
+				n = '0';
+			}
+			_putchar('\n');
+			repeat = 0;
+			n = '0';
+			limit = '9';
 		}
-	}
-	_putchar('\n');
+}
 
