@@ -2,24 +2,45 @@
 
 /**
  * leet - encodes a string into 1337
- * @s: string being encoded
+ * @str: string to be encoded
  *
- * Return: result of s
+ * Return: result of encoded string
  */
 
-char *leet(char *s)
+char *leet(char *str)
 {
-	int i, j;
-	char a[] = "aAeEoOtTlL";
-	char b[] = "4433007711";
+	int i = 0;
 
-	for (i = 0; *(s + i); i++)
+	while (str[i] != '\0')
 	{
-		for (j = 0; j <= 9; j++)
-		{
-			if (a[j] == *(s + j++))
-				*(s + i) = b[j];
-		}
+		str[i] = transform(str[i]);
+		i++;
 	}
-	return (s);
+	return (str);
+}
+
+/**
+ * transform - helper function to map a letter with its leet encoding
+ * @x: char to be encoded
+ *
+ * Return: the encoded char
+ */
+
+char transform(char x)
+{
+	char mapping_low[8] = {'o', 'l', '\0', 'e', 'a', '\0', '\0', 't'};
+	char mapping_upper[8] = {'O', 'L', '\0', 'E', 'A', '\0', '\0', 'T'};
+	int i = 0;
+	char replacement = x;
+
+	while (i < 8)
+{
+	if (x == mapping_low[i] || x == mapping_upper[i])
+	{
+		replacement = i + '0';
+		break;
+	}
+	i++
+}
+return (replacement);
 }
