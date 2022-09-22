@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * leet - encodes a string into 1337
+ * leet - leet encoder
  * @str: string to be encoded
  *
  * Return: result of encoded string
@@ -40,7 +40,7 @@ char transform(char x)
 		replacement = i + '0';
 		break;
 	}
-	i++
+	i++;
 }
 return (replacement);
 }
